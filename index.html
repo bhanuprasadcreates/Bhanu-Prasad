@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Laapata Files</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+  <style>
+    
+
+    body {
+      margin: 0;
+      background: #000;
+      color: #e60000;
+      font-family: 'Georgia', serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    
+
+    .container {
+      max-width: 600px;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 48px;
+      letter-spacing: 3px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #ccc;
+      line-height: 1.6;
+    }
+
+    button{
+  background: transparent;
+  color: #ff3b3b;
+  border: 1px solid #ff3b3b;
+  padding: 10px 22px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+
+  box-shadow:
+    0 0 5px rgba(255,59,59,0.6),
+    0 0 15px rgba(255,59,59,0.4);
+
+  transition: 0.3s ease;
+}
+@keyframes pulse {
+  0% {
+    box-shadow:
+      0 0 5px rgba(255,59,59,0.4),
+      0 0 15px rgba(255,59,59,0.2);
+  }
+  50% {
+    box-shadow:
+      0 0 10px rgba(255,59,59,0.8),
+      0 0 30px rgba(255,59,59,0.5);
+  }
+  100% {
+    box-shadow:
+      0 0 5px rgba(255,59,59,0.4),
+      0 0 15px rgba(255,59,59,0.2);
+  }
+}
+
+button:hover{
+  color: #ffffff;
+  box-shadow:
+    0 0 10px rgba(255,59,59,0.9),
+    0 0 30px rgba(255,59,59,0.7);
+}
+
+    
+
+    .hidden {
+      display: none;
+      margin-top: 25px;
+      font-style: italic;
+      color: #999;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>LAAPATA FILES</h1>
+    <p>
+      Kuch jagah… kuch log…  
+      sirf kahani nahi hote.  
+      <br><br>
+      Yeh universe YouTube par shuru hua tha,  
+      par yahin khatam nahi hota.
+    </p>
+<a href="files.html" style="text-decoration:none;">
+  <button>ENTER THE FILE</button>
+</a>
+    
+
+  <script>
+    // function reveal() {
+    //   document.getElementById("secret").style.display = "block";
+    // }
+    function reveal() {
+  window.location.href = "files.html";
+}
+  </script>
+
+</body>
+</html>

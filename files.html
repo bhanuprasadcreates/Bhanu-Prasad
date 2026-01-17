@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sealed Files</title>
+  <style>
+    body {
+      margin: 0;
+      background: #0b0b0b;
+      color: #e6e6e6;
+      font-family: Georgia, serif;
+      padding: 60px;
+    }
+
+    h1 {
+      color: #b30000;
+      letter-spacing: 3px;
+    }
+
+    .file {
+      border: 1px solid #b30000;
+      padding: 20px;
+      margin: 20px 0;
+      cursor: pointer;
+    }
+
+    .file:hover {
+      background: rgba(179,0,0,0.1);
+    }
+
+    button{
+  background: transparent;
+  color: #ff3b3b;
+  border: 1px solid #ff3b3b;
+  padding: 10px 22px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+
+  box-shadow:
+    0 0 5px rgba(255,59,59,0.6),
+    0 0 15px rgba(255,59,59,0.4);
+
+  transition: 0.3s ease;
+}
+
+button:hover{
+  color: #ffffff;
+  box-shadow:
+    0 0 10px rgba(255,59,59,0.9),
+    0 0 30px rgba(255,59,59,0.7);
+}
+ @keyframes pulse {
+  0% {
+    box-shadow:
+      0 0 5px rgba(255,59,59,0.4),
+      0 0 15px rgba(255,59,59,0.2);
+  }
+  50% {
+    box-shadow:
+      0 0 10px rgba(255,59,59,0.8),
+      0 0 30px rgba(255,59,59,0.5);
+  }
+  100% {
+    box-shadow:
+      0 0 5px rgba(255,59,59,0.4),
+      0 0 15px rgba(255,59,59,0.2);
+  }
+}
+
+button{
+  animation: pulse 1s infinite;
+}
+.progress{
+  margin-top:15px;
+  color:#ff3b3b;
+  font-size:13px;
+  letter-spacing:2px;
+  opacity:0.7;
+}
+.file.open {
+  border-color: #ff3b3b;
+  box-shadow: 0 0 8px rgba(255,59,59,0.4);
+}
+  </style>
+</head>
+
+<body>
+
+<h1>SEALED FILES</h1>
+<p class="progress">
+One file has been unsealed.
+</p>
+<p class="warning">Unseal attempt logged.</p>
+<p>Tumne woh files khol di hain… jinhe band rehna chahiye tha.</p>
+
+<a href="file001.html" style="text-decoration:none; color:inherit;">
+  <!-- <div class="file">FILE 001 — Laapata Haveli</div> -->
+  <div class="file open">FILE 001 — Laapata Haveli</div>
+</a>
+<a href="file002.html" style="text-decoration:none; color:inherit;">
+<div class="file locked" onclick="lockedFile()">
+  FILE 002 — Aakhri Call 🔒</div>
+  </a>
+<a href="file003.html" style="text-decoration:none; color:inherit;">
+<div class="file">FILE 003 — Woh Kamra</div>
+</a>
+<!-- <a href="file003.html" style="text-decoration:none; color:inherit;">
+<div class="file">archive-0217.html</div>
+</a> -->
+<a href="index.html">
+  <button>EXIT FILE</button>
+</a>
+<p style="
+  font-size:13px;
+  color:#600707;
+  margin-top:40px;
+  text-align:center;
+  letter-spacing:1px;
+">
+Fictional horror universe experience.
+</p>
+<script>
+function lockedFile(){
+  alert("ACCESS DENIED\n\nThis file is sealed by authority.\nDo not attempt again.");
+}
+</script>
+</body>
+</html>
